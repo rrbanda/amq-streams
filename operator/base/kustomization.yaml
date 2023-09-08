@@ -12,3 +12,4 @@ resources:
   - Role-strimzi-topic-operator.yaml
   - RoleBinding-strimzi-topic-operator.yaml
   - ServiceAccount-strimzi-topic-operator.yaml
+  - Deployment-strimzi-topic-operator.yaml
