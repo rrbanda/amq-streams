@@ -2,7 +2,7 @@ apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
   name: my-cluster
-namespace: kafka
+  namespace: kafka
 spec:
   kafka:
     version: 3.4.0
