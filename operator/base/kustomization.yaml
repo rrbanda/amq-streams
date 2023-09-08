@@ -8,8 +8,4 @@ resources:
   - subscription.yaml
   - kafka-persistent.yaml
   - kafka-bridge.yaml
-  - Crd-kafkatopic.yaml
-  - Role-strimzi-topic-operator.yaml
-  - RoleBinding-strimzi-topic-operator.yaml
-  - ServiceAccount-strimzi-topic-operator.yaml
-  - Deployment-strimzi-topic-operator.yaml
+  
