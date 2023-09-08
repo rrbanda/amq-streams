@@ -1,0 +1,23 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: kafka-rest
+  namespace: amq-streams
+  labels:
+    app.kubernetes.io/part-of: strimzi-my-bridge
+    app.kubernetes.io/instance: my-bridge
+    discovery.3scale.net: 'true'
+    strimzi.io/component-type: kafka-bridge
+    strimzi.io/name: my-bridge-bridge
+    strimzi.io/discovery: 'true'
+    app.kubernetes.io/managed-by: strimzi-cluster-operator
+    strimzi.io/kind: KafkaBridge
+    app.kubernetes.io/name: kafka-bridge
+    strimzi.io/cluster: my-bridge
+spec:
+  to:
+    kind: Service
+    name: my-bridge-bridge-service
+  tls: null
+  port:
+    targetPort: rest-api
