@@ -10,4 +10,5 @@ resources:
   - kafka-bridge.yaml
   - kafka-topic.yaml
   - streams-grafana-project.yaml
+  - grafana-og.yaml
   
