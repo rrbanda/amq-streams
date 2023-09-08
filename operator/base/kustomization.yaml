@@ -7,3 +7,4 @@ namespace: openshift-operators
 resources:
   - subscription.yaml
   - kafka-persistent.yaml
+  - kafka-bridge.yaml
