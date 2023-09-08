@@ -3,7 +3,7 @@ kind: Kafka
 metadata:
   name: my-cluster
   managedFields:
-  namespace: kafka
+  namespace: amq-streams
   labels:
     app.kubernetes.io/instance: amq-streams
 spec:
