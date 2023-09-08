@@ -2,6 +2,7 @@ apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaTopic
 metadata:
   name: pscu-digital
+  namespace: amq-streams
   labels:
     strimzi.io/cluster: my-cluster
 spec:
