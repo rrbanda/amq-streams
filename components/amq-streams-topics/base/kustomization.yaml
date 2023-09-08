@@ -5,4 +5,4 @@ kind: Kustomization
 namespace: amq-streams
 
 resources:
-  - psuc-topic.yaml
+  - pscu-topic.yaml
