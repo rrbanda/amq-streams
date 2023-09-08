@@ -8,4 +8,5 @@ resources:
   - subscription.yaml
   - kafka-persistent.yaml
   - kafka-bridge.yaml
+  - kafka-topic.yaml
   
