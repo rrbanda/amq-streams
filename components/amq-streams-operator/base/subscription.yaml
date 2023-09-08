@@ -4,7 +4,6 @@ metadata:
   labels:
     operators.coreos.com/amq-streams.openshift-operators: ""
   name: amq-streams
-  namespace: amq-streams
 spec:
   channel: stable
   installPlanApproval: Automatic
