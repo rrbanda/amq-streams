@@ -9,4 +9,5 @@ resources:
   - kafka-persistent.yaml
   - kafka-bridge.yaml
   - kafka-topic.yaml
+  - streams-grafana-project.yaml
   
