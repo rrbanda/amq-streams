@@ -9,6 +9,6 @@ OpenShift Topology View
 
 
 
-Argo CD Dashboard
+### Argo CD Dashboard
 
 <img width="1465" alt="Screenshot 2023-09-11 at 11 26 32 PM" src="https://github.com/veniceofcode/amq-streams/assets/93591339/fe22c753-d845-47a8-9714-577c6d3cc6f8">
