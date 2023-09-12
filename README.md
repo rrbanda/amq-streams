@@ -1,4 +1,4 @@
-# Red Hat AMQ streams: Simplify Apache Kafka on Red Hat OpenShift
+# Red Hat AMQ streams: Running Apache Kafka on Red Hat OpenShift using GitOps
 
 This repository will provide the manifests that can be used to deploy amq streans/kafka in a GitOps way on an OpenShift Cluster.
 
