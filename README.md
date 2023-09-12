@@ -3,7 +3,7 @@
 This repository will provide the manifests that can be used to deploy amq streans/kafka in a GitOps way on an OpenShift Cluster.
 
 
-## Architecture 
+## Kafka component architecture 
 
 ![image](https://github.com/veniceofcode/amq-streams/assets/93591339/6a901b7b-6f19-4b4d-a8f1-24a3c692e79d)
 
