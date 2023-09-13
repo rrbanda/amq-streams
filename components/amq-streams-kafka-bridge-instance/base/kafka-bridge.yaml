@@ -6,5 +6,6 @@ metadata:
 spec:
   replicas: 1
   bootstrapServers: my-cluster-kafka-bootstrap:9092
+  enableMetrics: true
   http:
     port: 8080
