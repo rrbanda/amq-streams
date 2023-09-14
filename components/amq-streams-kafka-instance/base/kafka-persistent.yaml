@@ -15,6 +15,12 @@ spec:
         port: 9093
         type: internal
         tls: true
+    readinessProbe:
+      initialDelaySeconds: 15
+      timeoutSeconds: 5
+    livenessProbe:
+      initialDelaySeconds: 15
+      timeoutSeconds: 5
     config:
       offsets.topic.replication.factor: 3
       transaction.state.log.replication.factor: 3
@@ -27,14 +33,35 @@ spec:
       volumes:
       - id: 0
         type: persistent-claim
-        size: 30Gi
+        size: 100Gi
         deleteClaim: false
+    metricsConfig:
+      type: jmxPrometheusExporter
+      valueFrom:
+        configMapKeyRef:
+          name: kafka-metrics
+          key: kafka-metrics-config.yml
   zookeeper:
     replicas: 3
+    readinessProbe:
+      initialDelaySeconds: 15
+      timeoutSeconds: 5
+    livenessProbe:
+      initialDelaySeconds: 15
+      timeoutSeconds: 5
     storage:
       type: persistent-claim
-      size: 30Gi
+      size: 100Gi
       deleteClaim: false
+    metricsConfig:
+      type: jmxPrometheusExporter
+      valueFrom:
+        configMapKeyRef:
+          name: kafka-metrics
+          key: zookeeper-metrics-config.yml
   entityOperator:
     topicOperator: {}
     userOperator: {}
+  kafkaExporter:
+    topicRegex: ".*"
+    groupRegex: ".*"
