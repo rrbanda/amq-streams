@@ -1,0 +1,17 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: kafka-ui
+  namespace: amq-streams
+  labels:
+    app.kubernetes.io/instance: akhq
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: akhq
+    helm.sh/chart: akhq-0.24.0
+spec:
+  to:
+    kind: Service
+    name: akhq
+  tls: {}
+  port:
+    targetPort: http
