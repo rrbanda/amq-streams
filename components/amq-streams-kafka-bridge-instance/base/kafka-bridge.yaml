@@ -4,7 +4,7 @@ metadata:
   name: my-bridge
   namespace: amq-streams
 spec:
-  replicas: 1
+  replicas: 2
   bootstrapServers: my-cluster-kafka-bootstrap:9092
   enableMetrics: true
   http:
