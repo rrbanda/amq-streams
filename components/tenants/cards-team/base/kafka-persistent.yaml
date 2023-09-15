@@ -1,7 +1,7 @@
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
-  name: cards-cluster
+  name: amq-streams-lab
 spec:
   kafka:
     version: 3.4.0
