@@ -12,11 +12,13 @@ metadata:
 
 spec:
 
-  version: 3.4.0
+  version: 3.2.3
 
   replicas: 1
 
   bootstrapServers: my-cluster-kafka-bootstrap:9092
+
+  # image: quay.io/lordofthejars/mongodb-sink-connect-cluster:latest
 
   build:
 
@@ -24,7 +26,7 @@ spec:
 
       type: docker
 
-      image: quay.io/rbrhssa/mongodb-sink-connect-cluster:latest
+      image: quay.io/lordofthejars/mongodb-sink-connect-cluster:latest
 
       pushSecret: quayio
 
