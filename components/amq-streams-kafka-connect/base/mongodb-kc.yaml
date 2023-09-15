@@ -18,8 +18,6 @@ spec:
 
   bootstrapServers: my-cluster-kafka-bootstrap:9092
 
-  # image: quay.io/rbrhssa/mongodb-sink-connect-cluster:latest
-
   build:
 
     output:
