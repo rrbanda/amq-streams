@@ -66,6 +66,12 @@ spec:
     topicRegex: ".*"
     groupRegex: ".*"
   cruiseControl:
+    metricsConfig:
+      type: jmxPrometheusExporter
+      valueFrom:
+        configMapKeyRef:
+          name: cruise-control-metrics
+          key: metrics-config.yml
     config:
       # Note that `goals` must be a superset of `default.goals` and `hard.goals`
       goals: >
