@@ -144,4 +144,3 @@ data:
       name: kafka_connect_worker_rebalance_$1
       help: "Kafka Connect JMX metric rebalance information"
       type: GAUGE
-
