@@ -8,3 +8,5 @@ resources:
   - kafka-connect.yaml
   - source-connector.yaml
   - producer.yaml
+  - mongodb-kc.yaml
+  - mongodb-kcn.yaml
