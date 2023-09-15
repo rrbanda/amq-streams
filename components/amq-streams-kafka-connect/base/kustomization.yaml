@@ -7,3 +7,4 @@ namespace: amq-streams
 resources:
   - kafka-connect.yaml
   - source-connector.yaml
+  - metrics-config.yml
