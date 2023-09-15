@@ -6,5 +6,4 @@ namespace: amq-streams-lab
 
 resources:
   - kafka-persistent.yaml
-  - kafka-metrics-configmap.yaml
-  - metrics-config.yml
+
