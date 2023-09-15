@@ -6,7 +6,5 @@ namespace: amq-streams
 
 resources:
   - producer.yaml
-  - mongodb-kc.yaml
-  - mongodb-kcn.yaml
   - kafka-connect.yaml
   - source-connector.yaml
