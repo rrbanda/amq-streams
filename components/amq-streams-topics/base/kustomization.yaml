@@ -6,3 +6,4 @@ namespace: amq-streams
 
 resources:
   - pscu-topic.yaml
+  - samples.yaml
