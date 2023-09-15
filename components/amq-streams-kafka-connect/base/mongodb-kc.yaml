@@ -24,7 +24,7 @@ spec:
 
       type: docker
 
-      image: quay.io/rbrhssa/mongodb-sink-connect-cluster:latest
+      image: quay.io/lordofthejars/mongodb-sink-connect-cluster:latest
 
       pushSecret: quayio
 
