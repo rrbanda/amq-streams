@@ -1,7 +1,7 @@
 kind: DeploymentConfig
 apiVersion: apps.openshift.io/v1
 metadata:
-  name: prod-kafka-cluster-kafdrop
+  name: my-cluster
   labels:
     app: kafdrop
   annotations:
@@ -22,7 +22,7 @@ spec:
         - name: kafdrop
           env:
             - name: KAFKA_BROKERCONNECT
-              value: "prod-kafka-cluster-kafka-bootstrap:9092"
+              value: "my-cluster-kafka-bootstrap.amq-streams.svc.cluster.local:9092"
           imagePullPolicy: IfNotPresent
           image: obsidiandynamics/kafdrop
           ports:
