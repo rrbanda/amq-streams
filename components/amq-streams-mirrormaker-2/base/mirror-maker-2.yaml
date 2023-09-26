@@ -259,3 +259,20 @@ spec:
           sync.group.offsets.enabled: "true"
       topicsPattern: ".*"
       groupsPattern: ".*"
+  jmxOptions: { }
+  logging:
+    type: inline
+    loggers:
+      connect.root.logger.level: "INFO"
+  resources:
+    limits:
+      memory: 3Gi
+    requests:
+      cpu: 1000m
+      memory: 1Gi
+  readinessProbe:
+    initialDelaySeconds: 120
+    timeoutSeconds: 60
+  livenessProbe:
+    initialDelaySeconds: 120
+    timeoutSeconds: 60
