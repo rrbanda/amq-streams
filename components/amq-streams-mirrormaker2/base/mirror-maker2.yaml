@@ -131,7 +131,7 @@ metadata:
   name: my-mirror-maker-2
 spec:
   version: 3.4.0
-  replicas: 1
+  replicas: 2
   connectCluster: "my-target-cluster"
   clusters:
     - alias: "my-source-cluster"
