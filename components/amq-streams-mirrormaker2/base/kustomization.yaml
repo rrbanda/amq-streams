@@ -6,3 +6,4 @@ namespace: mirrormaker
 
 resources:
   - mirror-maker2.yaml
+  - my-cluster-tgt.yaml
