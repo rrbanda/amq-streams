@@ -218,3 +218,4 @@ spec:
           sync.group.offsets.enabled: "true"
       topicsPattern: ".*"
       groupsPattern: ".*"
+---
