@@ -6,4 +6,3 @@ namespace: mm2
 
 resources:
   - mirror-maker2.yaml
-  - my-cluster-tgt.yaml
