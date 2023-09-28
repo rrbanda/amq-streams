@@ -2,8 +2,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: amq2
+namespace: amq1
 
 resources:
   - my-source-cluster.yaml
-  - mm2tgt.yaml
+  - my-topic.yaml
