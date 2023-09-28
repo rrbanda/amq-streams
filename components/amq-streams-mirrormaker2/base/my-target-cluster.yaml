@@ -5,7 +5,7 @@ metadata:
 spec:
   kafka:
     version: 3.4.0
-    replicas: 1
+    replicas: 3
     listeners:
       - name: tls
         port: 9093
@@ -27,13 +27,13 @@ spec:
       volumes:
         - id: 0
           type: persistent-claim
-          size: 10Gi
+          size: 5Gi
           deleteClaim: false
   zookeeper:
-    replicas: 1
+    replicas: 3
     storage:
       type: persistent-claim
-      size: 10Gi
+      size: 5Gi
       deleteClaim: false
   entityOperator:
     userOperator: {}
