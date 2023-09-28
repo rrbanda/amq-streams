@@ -6,3 +6,4 @@ namespace: mm
 
 resources:
   - mirror-maker2.yaml
+  - my-topic.yaml
