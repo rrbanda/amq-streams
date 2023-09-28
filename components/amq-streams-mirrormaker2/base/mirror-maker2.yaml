@@ -4,7 +4,7 @@ metadata:
   name: my-mirror-maker-2
 spec:
   version: 3.4.0
-  replicas: 1
+  replicas: 3
   connectCluster: "my-target-cluster"
   clusters:
     - alias: "my-source-cluster"
@@ -13,12 +13,24 @@ spec:
         trustedCertificates:
           - secretName: my-source-cluster-cluster-ca-cert
             certificate: ca.crt
+      authentication:
+        type: tls
+        certificateAndKey:
+          secretName: my-source-user
+          certificate: user.crt
+          key: user.key
     - alias: "my-target-cluster"
       bootstrapServers: my-target-cluster-kafka-bootstrap:9093
       tls:
         trustedCertificates:
           - secretName: my-target-cluster-cluster-ca-cert
             certificate: ca.crt
+      authentication:
+        type: tls
+        certificateAndKey:
+          secretName: my-target-user
+          certificate: user.crt
+          key: user.key
       config:
         # -1 means it will use the default replication factor configured in the broker
         config.storage.replication.factor: -1
@@ -38,5 +50,6 @@ spec:
       checkpointConnector:
         config:
           checkpoints.topic.replication.factor: 1
+          sync.group.offsets.enabled: "true"
       topicsPattern: ".*"
       groupsPattern: ".*"
