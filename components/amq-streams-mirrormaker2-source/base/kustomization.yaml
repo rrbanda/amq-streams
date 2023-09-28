@@ -6,3 +6,4 @@ namespace: mirrormaker2-source
 
 resources:
   - my-source.yaml
+  - pscu-topic.yaml
