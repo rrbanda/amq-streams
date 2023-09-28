@@ -5,5 +5,4 @@ kind: Kustomization
 namespace: mirrormaker
 
 resources:
-  - my-target-cluster.yaml
-  - my-target-user.yaml
+  - mirror-maker2.yaml
