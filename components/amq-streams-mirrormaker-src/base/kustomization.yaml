@@ -7,3 +7,4 @@ namespace: amq1
 resources:
   - my-source-cluster.yaml
   - my-topic.yaml
+  - pscu-digital.yaml
