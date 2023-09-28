@@ -6,3 +6,5 @@ namespace: mirrormaker2
 
 resources:
   - mirror-maker2.yaml
+  - my-target-cluster.yaml
+  - my-target-user.yaml
