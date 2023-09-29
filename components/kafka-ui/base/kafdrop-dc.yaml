@@ -22,7 +22,7 @@ spec:
         - name: kafdrop
           env:
             - name: KAFKA_BROKERCONNECT
-              value: "my-cluster-kafka-bootstrap.amq-streams.svc.cluster.local:9092"
+              value: "my-cluster-source-kafka-bootstrap.amq1.svc.cluster.local"
           imagePullPolicy: IfNotPresent
           image: obsidiandynamics/kafdrop
           ports:
