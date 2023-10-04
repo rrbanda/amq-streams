@@ -6,5 +6,4 @@ namespace: amq-streams-kafka-cluster
 
 resources:
   - kafka-persistent.yaml
-  - kafka-metrics-configmap.yaml
-  - metrics-config.yaml
+
