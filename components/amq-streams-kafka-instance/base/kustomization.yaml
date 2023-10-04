@@ -9,3 +9,4 @@ resources:
   - kafka-metrics-configmap.yaml
   - metrics-config.yaml
   - amq-streams-rolebinding.yaml
+  - kafka-admin-role.yaml
