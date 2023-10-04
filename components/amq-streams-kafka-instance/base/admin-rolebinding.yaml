@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding   # Use ClusterRoleBinding for cluster-wide access or RoleBinding for namespace-specific access
+metadata:
+  name: admin-rolebinding
+subjects:
+  - kind: ServiceAccount
+    name: openshift-gitops-argocd-application-controller  # The name of the service account
+    namespace: openshift-gitops  # The namespace of the service account
+roleRef:
+  kind: ClusterRole   # Reference the kind of role (ClusterRole or Role)
+  name: admin-role    # The name of the role defined in the previous step
+  apiGroup: rbac.authorization.k8s.io

@@ -1,0 +1,8 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole   # Use ClusterRole for cluster-wide access or Role for namespace-specific access
+metadata:
+  name: admin-role
+rules:
+  - apiGroups: [""]
+    resources: ["*"]
+    verbs: ["*"]
