@@ -5,7 +5,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: openshift-gitops-argocd-application-controller
-    namespace: amq-streams  # Replace with the desired namespace
+    namespace: openshift-gitops  # Replace with the desired namespace
 roleRef:
   kind: ClusterRole
   name: admin-role
