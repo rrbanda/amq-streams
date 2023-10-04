@@ -8,5 +8,5 @@ subjects:
     namespace: amq-streams-kafka
 roleRef:
   kind: ClusterRole
-  name: admin
+  name: kafka-admin-role
   apiGroup: rbac.authorization.k8s.io
