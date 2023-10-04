@@ -5,7 +5,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: openshift-gitops-argocd-application-controller
-    namespace: amq-streams
+    namespace: amq-streams-kafka
 roleRef:
   kind: ClusterRole
   name: admin
