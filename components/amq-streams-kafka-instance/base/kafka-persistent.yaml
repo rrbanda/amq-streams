@@ -40,7 +40,7 @@ spec:
       valueFrom:
         configMapKeyRef:
           name: kafka-metrics
-          key: kafka-metrics-config.yml
+          key: kafka-metrics-config.yaml
   zookeeper:
     replicas: 3
     readinessProbe:
@@ -58,7 +58,7 @@ spec:
       valueFrom:
         configMapKeyRef:
           name: kafka-metrics
-          key: zookeeper-metrics-config.yml
+          key: zookeeper-metrics-config.yaml
   entityOperator:
     topicOperator: {}
     userOperator: {}
@@ -71,7 +71,7 @@ spec:
       valueFrom:
         configMapKeyRef:
           name: cruise-control-metrics
-          key: metrics-config.yml
+          key: metrics-config.yaml
     config:
       # Note that `goals` must be a superset of `default.goals` and `hard.goals`
       goals: >

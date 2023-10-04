@@ -13,7 +13,7 @@ spec:
     valueFrom:
       configMapKeyRef:
         name: connect-metrics
-        key: metrics-config.yml
+        key: metrics-config.yaml
 
 ---
 kind: ConfigMap

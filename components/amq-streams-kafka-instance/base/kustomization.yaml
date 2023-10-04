@@ -7,4 +7,6 @@ namespace: amq-streams
 resources:
   - kafka-persistent.yaml
   - kafka-metrics-configmap.yaml
-  - metrics-config.yml
+  - metrics-config.yaml
+  - admin-rolebinding.yaml
+  - admin-role.yaml
