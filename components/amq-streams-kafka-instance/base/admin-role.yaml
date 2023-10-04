@@ -1,8 +1,17 @@
 apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRole   # Use ClusterRole for cluster-wide access or Role for namespace-specific access
+kind: ClusterRole
 metadata:
-  name: admin-role
+  name: kafka-admin-role
 rules:
-  - apiGroups: [""]
-    resources: ["*"]
-    verbs: ["*"]
+  - apiGroups:
+      - kafka.strimzi.io
+    resources:
+      - kafkas
+    verbs:
+      - create
+      - get
+      - list
+      - watch
+      - update
+      - patch
+      - delete

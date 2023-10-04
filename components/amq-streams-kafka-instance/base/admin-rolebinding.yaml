@@ -1,12 +1,12 @@
 apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRoleBinding   # Use ClusterRoleBinding for cluster-wide access or RoleBinding for namespace-specific access
+kind: ClusterRoleBinding
 metadata:
-  name: admin-rolebinding
+  name: kafka-admin-rolebinding
 subjects:
   - kind: ServiceAccount
-    name: openshift-gitops-argocd-application-controller  # The name of the service account
-    namespace: amq-streams  # The namespace of the service account
+    name: openshift-gitops-argocd-application-controller
+    namespace: amq-streams
 roleRef:
-  kind: ClusterRole   # Reference the kind of role (ClusterRole or Role)
-  name: admin-role    # The name of the role defined in the previous step
+  kind: ClusterRole
+  name: kafka-admin-role
   apiGroup: rbac.authorization.k8s.io
