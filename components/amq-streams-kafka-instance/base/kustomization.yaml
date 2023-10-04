@@ -8,5 +8,4 @@ resources:
   - kafka-persistent.yaml
   - kafka-metrics-configmap.yaml
   - metrics-config.yaml
-  - admin-rolebinding.yaml
-  - admin-role.yaml
+  - kafka-admin-rolebinding.yaml
