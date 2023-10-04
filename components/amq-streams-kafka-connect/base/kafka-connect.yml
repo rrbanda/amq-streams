@@ -13,7 +13,7 @@ spec:
     valueFrom:
       configMapKeyRef:
         name: connect-metrics
-        key: metrics-config.yaml
+        key: kafka-metrics-config.yaml
 
 ---
 kind: ConfigMap
