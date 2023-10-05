@@ -5,7 +5,7 @@ metadata:
   labels:
     app: my-connect-cluster
 spec:
-  version: 3.4.0
+  version: 3.5.0
   replicas: 1
   bootstrapServers: my-cluster-kafka-bootstrap:9092
   metricsConfig:
@@ -13,7 +13,7 @@ spec:
     valueFrom:
       configMapKeyRef:
         name: connect-metrics
-        key: kafka-metrics-config.yaml
+        key: metrics-config.yml
 
 ---
 kind: ConfigMap
