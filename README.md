@@ -50,3 +50,7 @@ This repository will provide the manifests that can be used to deploy amq strean
 
 ![image](https://github.com/veniceofcode/amq-streams/assets/93591339/c8ebcd21-5906-4e8e-9f87-64f37435e955)
 
+
+## References
+https://access.redhat.com/documentation/en-us/red_hat_amq_streams/2.5
+
