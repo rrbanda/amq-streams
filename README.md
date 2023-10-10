@@ -52,5 +52,7 @@ This repository will provide the manifests that can be used to deploy amq strean
 
 
 ## References
-https://access.redhat.com/documentation/en-us/red_hat_amq_streams/2.5
+
+* https://access.redhat.com/documentation/en-us/red_hat_amq_streams/2.5
+* https://developers.redhat.com/developer-sandbox
 
