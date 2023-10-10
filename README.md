@@ -24,3 +24,14 @@ This repository will provide the manifests that can be used to deploy amq strean
 
 ![image](https://github.com/veniceofcode/amq-streams/assets/93591339/5f3e4c0f-c7d7-447d-b400-26a704cbff4e)
 
+
+## MirrorMaker 2.0
+
+### Replication across two clusters
+
+![image](https://github.com/veniceofcode/amq-streams/assets/93591339/ad35e6f7-d4ca-4e26-9322-b15db2b30c30)
+
+### Bidirectional replication (active/active)
+
+![image](https://github.com/veniceofcode/amq-streams/assets/93591339/c8ebcd21-5906-4e8e-9f87-64f37435e955)
+
