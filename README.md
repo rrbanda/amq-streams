@@ -7,11 +7,6 @@ This repository will provide the manifests that can be used to deploy amq strean
 
 ![image](https://github.com/veniceofcode/amq-streams/assets/93591339/6a901b7b-6f19-4b4d-a8f1-24a3c692e79d)
 
-## Kafka component interaction
-
-![image](https://github.com/veniceofcode/amq-streams/assets/93591339/b4aad1bc-6034-4b72-a013-81f710ec2aa1)
-
-
 ## Kafka brokers and topics
 
 ![image](https://github.com/veniceofcode/amq-streams/assets/93591339/11bc616c-f508-46c7-b8ca-4cd4b6843f4d)
